@@ -24,7 +24,7 @@ export class TabsPage {
   tab2Root: any = AddPage;
   tab3Root: any = AroundPage;
   tab4Root: any = FriendsPage;
-  tab5Root: any = SettingsPage;
+  //tab5Root: any = SettingsPage;
 
   email:string;
 
@@ -37,4 +37,7 @@ export class TabsPage {
     this.navCtrl.setRoot(Routes.getRootPage(false));
   }
 
+  goSettings() {
+    this.navCtrl.push(Routes.getPage(Routes.SETTINGS))
+  }
 }
